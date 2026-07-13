@@ -12,7 +12,8 @@ import "./globals.css";
 
 export const metadata = {
   title: "FocusForge Task Manager",
-  description: "A custom Next.js task manager with filters and persistence.",
+  description:
+    "A responsive task management application built with Next.js, React, and Tailwind CSS.",
 };
 
 export default function RootLayout({ children }) {
