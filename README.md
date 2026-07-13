@@ -2,45 +2,50 @@
 
 ## Project Description
 
-FocusForge Task Manager is a Next.js task management app built with React and Tailwind CSS. It allows users to add, complete, delete, filter, clear, and save tasks in the browser using localStorage.
+FocusForge Task Manager is a responsive task management application built with Next.js, React, JavaScript, and Tailwind CSS. It allows users to create, complete, delete, filter, and manage tasks through a clean dashboard interface. Tasks are automatically saved using localStorage so they remain available after the browser is refreshed.
 
 ## Features
 
 - Add tasks with a controlled form
-- Reject blank tasks
-- Toggle tasks complete or incomplete
+- Reject blank task submissions
+- Mark tasks as complete or incomplete
 - Delete individual tasks
-- Filter by All, Active, and Done
-- Show live total, active, and completed counts
+- Filter tasks by All, Active, and Done
+- Display live total, active, and completed task counts
 - Clear all completed tasks
-- Persist tasks after browser refresh using localStorage
+- Persist tasks using localStorage
+- Responsive dashboard layout
 
 ## Design Direction
 
-I chose a dark-mode dashboard design. The app uses a sidebar for stats and filters instead of placing everything in one vertical list. The design uses a slate background, cyan accent buttons, rounded cards, larger spacing, and status-based visual changes for completed tasks.
+I chose a modern dark-mode dashboard layout instead of a traditional vertical task list. The interface uses a sidebar for task statistics and filtering, along with rounded cards, cyan accent colors, and clear visual indicators for completed tasks. The goal was to create an interface that feels organized, easy to navigate, and visually appealing.
 
-## Tech Stack
+## Technologies Used
 
 - Next.js 16
 - React 19
-- Tailwind CSS v4
 - JavaScript
+- Tailwind CSS v4
 
 ## Project Structure
 
 ```text
-src/app/page.js
-src/app/layout.js
-src/app/globals.css
-src/components/TaskBoard.js
-src/components/TaskList.js
-src/components/TaskCard.js
-src/components/AddTaskForm.js
-src/components/TaskStats.js
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+└── components/
+    ├── AddTaskForm.js
+    ├── TaskBoard.js
+    ├── TaskCard.js
+    ├── TaskList.js
+    └── TaskStats.js
+
 README.md
 ```
 
-## Setup Instructions
+## How to Run the Project
 
 Install dependencies:
 
@@ -48,23 +53,28 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open the app:
+Open your browser and visit:
 
 ```text
 http://localhost:3000
 ```
 
+## What I Learned
+
+Building this project improved my understanding of React component organization, state management, callback functions, immutable state updates, and browser storage with localStorage. I also gained experience using Next.js, structuring a larger project across multiple components, debugging application logic, and documenting a project for GitHub. This project helped me become more confident developing business applications that are both functional and user-friendly.
+
 ## AI Usage Log
 
-- I used AI to help break down the assignment requirements into the required Next.js file structure.
-- I used AI to help explain React concepts such as state, derived values, callback props, immutable updates, and localStorage.
-- I used AI to help debug project setup issues and improve code comments, but I reviewed and tested the code before submission.
+- Used AI to help interpret the assignment requirements and organize the project structure.
+- Used AI to better understand React concepts including state management, callback props, derived values, immutable updates, and localStorage.
+- Used AI as a debugging assistant while developing the application.
+- Reviewed, tested, and verified all generated suggestions before including them in the final project.
 
 ## Author
 
